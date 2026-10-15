@@ -1,0 +1,9 @@
+# Data manipulation
+numpy>=2.0,<3.0
+pandas>=2.2,<3.0
+
+# Statistical inference
+scipy>=1.14,<2.0
+
+# Visualization
+matplotlib>=3.9,<4.0

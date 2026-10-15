@@ -1,0 +1,36 @@
+# Local environment and secrets
+.env
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Source data and generated datasets
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/exports/*
+!data/exports/.gitkeep
+
+# Local logs and temporary files
+*.log
+*.tmp
+~$*
+
+# Power BI lock/cache files
+*.pbit.lock
+*.pbix.lock
+

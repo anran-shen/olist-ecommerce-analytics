@@ -1,0 +1,116 @@
+{
+  "analysis_unit": "delivered order with delivery promise and latest review",
+  "sample_orders": 95824,
+  "unique_customers": 92747,
+  "late_orders": 7661,
+  "late_rate_wilson_ci": {
+    "estimate": 0.07994865586909333,
+    "lower": 0.07824823972656751,
+    "upper": 0.08168274927944637,
+    "confidence": 0.95
+  },
+  "descriptive_statistics": [
+    {
+      "delivery_group": "on_time",
+      "orders": 88163,
+      "review_mean": 4.294114310992139,
+      "review_std": 1.1472516256084833,
+      "review_mean_ci_lower": 4.286541283119805,
+      "review_mean_ci_upper": 4.301687338864474,
+      "review_median": 5.0,
+      "review_q25": 4.0,
+      "review_q75": 5.0,
+      "low_review_rate": 0.09221555527829135,
+      "delivery_mean_days": 10.877722740832324,
+      "delivery_median_days": 9.72,
+      "delivery_q90_days": 19.26
+    },
+    {
+      "delivery_group": "late",
+      "orders": 7661,
+      "review_mean": 2.565069834225297,
+      "review_std": 1.658462462614277,
+      "review_mean_ci_lower": 2.527926607043611,
+      "review_mean_ci_upper": 2.6022130614069834,
+      "review_median": 2.0,
+      "review_q25": 1.0,
+      "review_q75": 4.0,
+      "low_review_rate": 0.5406604881869208,
+      "delivery_mean_days": 31.378797807074793,
+      "delivery_median_days": 29.08,
+      "delivery_q90_days": 47.76
+    }
+  ],
+  "late_vs_on_time": {
+    "contrast": "late minus on-time review score",
+    "welch": {
+      "estimate": -1.729044476766842,
+      "lower": -1.7669516153158529,
+      "upper": -1.6911373382178312,
+      "confidence": 0.95,
+      "standard_error": 0.019337914871740653,
+      "degrees_freedom": 8309.03228521667,
+      "t_statistic": -89.4121464612284,
+      "p_value": 0.0
+    },
+    "hedges_g": -1.445461311696292,
+    "mann_whitney": {
+      "u_statistic": 150706850.5,
+      "p_value": 0.0,
+      "rank_biserial": -0.5537367053395654
+    }
+  },
+  "delivery_days_correlation": {
+    "primary_method": "Spearman rank correlation",
+    "spearman_rho": -0.2345766861946489,
+    "spearman_p_value": 0.0,
+    "spearman_approximate_ci": {
+      "estimate": -0.2345766861946489,
+      "lower": -0.24055098778286732,
+      "upper": -0.22858461165990712,
+      "confidence": 0.95
+    },
+    "pearson_r": -0.3340418381792476,
+    "pearson_p_value": 0.0
+  },
+  "customer_independence_sensitivity": {
+    "method": "earliest eligible order per customer",
+    "orders": 92747,
+    "customers": 92747,
+    "contrast": "late minus on-time review score",
+    "welch": {
+      "estimate": -1.734414619387532,
+      "lower": -1.7728335504417734,
+      "upper": -1.6959956883332907,
+      "confidence": 0.95,
+      "standard_error": 0.019598919098640463,
+      "degrees_freedom": 8079.3885402249,
+      "t_statistic": -88.4954221535536,
+      "p_value": 0.0
+    },
+    "hedges_g": -1.4494766732015105,
+    "mann_whitney": {
+      "u_statistic": 141200840.5,
+      "p_value": 0.0,
+      "rank_biserial": -0.5553243366093484
+    }
+  },
+  "stratified_consistency": {
+    "purchase_month": {
+      "stratification": "purchase_month",
+      "minimum_orders_per_status": 30,
+      "eligible_strata": 19,
+      "strata_with_lower_late_mean": 19,
+      "smallest_difference": -2.0565112857527073,
+      "largest_difference": -0.8440815584622139
+    },
+    "customer_state": {
+      "stratification": "customer_state",
+      "minimum_orders_per_status": 30,
+      "eligible_strata": 22,
+      "strata_with_lower_late_mean": 22,
+      "smallest_difference": -2.361425178147268,
+      "largest_difference": -1.0941176470588232
+    }
+  }
+}

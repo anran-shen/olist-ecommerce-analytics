@@ -1,0 +1,80 @@
+{
+  "experiment": "proactive delay notification with updated ETA",
+  "planning_baseline_low_review_rate": 0.5406604881869208,
+  "selected_absolute_mde": 0.05,
+  "selected_relative_reduction": 0.09247947851279575,
+  "alpha_two_sided": 0.05,
+  "power": 0.8,
+  "analyzable_fraction": 0.9,
+  "sample_per_arm": 1568,
+  "total_analyzable_sample": 3136,
+  "adjusted_sample_per_arm": 1743,
+  "total_enrollment_target": 3486,
+  "historical_monthly_actual_late_proxy": 606.625,
+  "historical_monthly_proxy_minimum": 83,
+  "historical_monthly_proxy_maximum": 1463,
+  "duration_scenarios": [
+    {
+      "scenario": "historical actual-late proxy",
+      "eligible_orders_per_month": 606.625,
+      "estimated_enrollment_months": 6
+    },
+    {
+      "scenario": "500 eligible orders/month",
+      "eligible_orders_per_month": 500.0,
+      "estimated_enrollment_months": 7
+    },
+    {
+      "scenario": "1000 eligible orders/month",
+      "eligible_orders_per_month": 1000.0,
+      "estimated_enrollment_months": 4
+    },
+    {
+      "scenario": "1500 eligible orders/month",
+      "eligible_orders_per_month": 1500.0,
+      "estimated_enrollment_months": 3
+    }
+  ],
+  "sample_size_scenarios": [
+    {
+      "absolute_mde": 0.03,
+      "relative_reduction": 0.055487687107677444,
+      "planned_treatment_rate": 0.5106604881869208,
+      "cohens_h": 0.06008828273407363,
+      "sample_per_arm": 4348,
+      "total_analyzable_sample": 8696,
+      "adjusted_sample_per_arm": 4832,
+      "total_enrollment_target": 9664
+    },
+    {
+      "absolute_mde": 0.05,
+      "relative_reduction": 0.09247947851279575,
+      "planned_treatment_rate": 0.4906604881869208,
+      "cohens_h": 0.10009098480142198,
+      "sample_per_arm": 1568,
+      "total_analyzable_sample": 3136,
+      "adjusted_sample_per_arm": 1743,
+      "total_enrollment_target": 3486
+    },
+    {
+      "absolute_mde": 0.08,
+      "relative_reduction": 0.14796716562047318,
+      "planned_treatment_rate": 0.4606604881869208,
+      "cohens_h": 0.16017130101673782,
+      "sample_per_arm": 613,
+      "total_analyzable_sample": 1226,
+      "adjusted_sample_per_arm": 682,
+      "total_enrollment_target": 1364
+    },
+    {
+      "absolute_mde": 0.1,
+      "relative_reduction": 0.1849589570255915,
+      "planned_treatment_rate": 0.44066048818692083,
+      "cohens_h": 0.20037027241650351,
+      "sample_per_arm": 392,
+      "total_analyzable_sample": 784,
+      "adjusted_sample_per_arm": 436,
+      "total_enrollment_target": 872
+    }
+  ]
+}
